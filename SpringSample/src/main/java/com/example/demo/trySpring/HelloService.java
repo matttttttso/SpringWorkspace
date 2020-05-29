@@ -17,7 +17,7 @@ public class HelloService {
 		
 		// Mapから値を取得
 		int employeeId = (Integer)map.get("employee_id");
-		String employeeName = (String)map.get("employee_ name");
+		String employeeName = (String)map.get("employee_name");
 		int age = (Integer)map.get("age");
 		
 		// Employeeクラスに値をセット
