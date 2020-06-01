@@ -16,7 +16,7 @@ public class LogAspect {
 	メソッド名：*（アスタリスク）を指定します。
 	引数：..（ドット２個）で全ての引数が対象になります。
 	*/
-	@Around("execution(* *..*.*Controller.*(..))")
+	@Around("bean(*Controller)")
 	public Object startLog(ProceedingJoinPoint jp) throws Throwable {
 		
 		System.out.println("メソッド開始： " + jp.getSignature());
